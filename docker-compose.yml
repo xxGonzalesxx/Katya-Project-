@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:18.7
+    container_name: katya-postgres
+    environment:
+      POSTGRES_DB: katya
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - katya_diplom:/var/lib/postgresql
+
+volumes:
+  katya_diplom:
