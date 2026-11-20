@@ -7,5 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class Main {
     static void main() {
          SpringApplication.run(Main.class);
+        System.out.println("Сайт:http://localhost:8080");
     }
 }
