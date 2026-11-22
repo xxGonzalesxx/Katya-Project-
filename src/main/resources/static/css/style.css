@@ -1,0 +1,18 @@
+/* ===== Переменные ===== */
+:root {
+    --brand: #0d6efd;
+    --brand-dark: #0b5ed7;
+    --radius: 0.5rem;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --transition: 0.15s ease;
+}
+
+/* ===== Модули ===== */
+@import url('base.css');
+@import url('navbar.css');
+@import url('buttons.css');
+@import url('forms.css');
+@import url('cards.css');
+@import url('lists.css');
+@import url('components.css');

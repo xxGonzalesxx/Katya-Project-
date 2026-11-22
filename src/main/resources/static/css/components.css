@@ -1,0 +1,65 @@
+/* ===== Баннер согласия (offer) ===== */
+.offer-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+    background: #212529;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.3s ease-out;
+}
+
+.offer-banner__content {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.offer-banner a {
+    color: #9ec5fe;
+    text-decoration: underline;
+}
+
+.offer-banner a:hover {
+    color: #fff;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); }
+    to   { transform: translateY(0); }
+}
+
+/* ===== Утилиты ===== */
+.page-title {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.text-muted-sm {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 576px) {
+    .btn-lg {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .offer-banner__content {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+}
