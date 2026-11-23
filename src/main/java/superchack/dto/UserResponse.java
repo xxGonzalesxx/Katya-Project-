@@ -1,4 +1,10 @@
 package superchack.dto;
 
-public class UserResponse {
-}
+import superchack.entity.Role;
+
+public record UserResponse (
+        Long userId,
+        String email,
+        Role role,
+        Boolean isActive
+){}

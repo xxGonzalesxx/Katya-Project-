@@ -4,6 +4,7 @@ import { renderHome } from './pages/home.js';
 import { renderRules } from './pages/rules.js';
 import { renderLogin } from './pages/login.js';
 import { renderNews } from './pages/news.js';
+import { renderOffer } from './pages/offer.js'
 
 // Регистрация маршрутов
 register('/home', renderHome);
@@ -18,6 +19,7 @@ window.addEventListener('hashchange', updateActiveNavLink);
 
 startRouter();
 updateActiveNavLink();
+renderOffer();
 
 /**
  * Рендер навигации (можно вызывать повторно после логина/логаута)
